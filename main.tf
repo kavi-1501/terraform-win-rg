@@ -94,7 +94,7 @@ resource "azurerm_subnet_network_security_group_association" "nsg_assoc" {
 
 # Network Interface
 resource "azurerm_network_interface" "nic" {
-  name                = "winvm-nic"
+  name                = "winvm-nic2"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
 
@@ -108,7 +108,7 @@ resource "azurerm_network_interface" "nic" {
 
 # Windows Virtual Machine
 resource "azurerm_windows_virtual_machine" "vm" {
-  name                = "winhamd"
+  name                = "winkavi"
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
   size                = "Standard_D4s_v3"
