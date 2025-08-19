@@ -27,7 +27,7 @@ provider "azurerm" {
 # Resource Group
 resource "azurerm_resource_group" "rg" {
   name     = "terrarg8"
-  location = "UK South"
+  location = "West US 3"
 }
 
 # Virtual Network
